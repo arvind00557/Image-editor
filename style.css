@@ -1,0 +1,87 @@
+body{
+margin:0;
+font-family: Arial, sans-serif;
+background:#f3f5f7;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 20px;
+background:#111827;
+color:white;
+}
+
+.primary{
+background:#2563eb;
+color:white;
+border:none;
+padding:8px 12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.app{
+display:grid;
+grid-template-columns: 180px 1fr 260px;
+height: calc(100vh - 50px);
+}
+
+/* LEFT BAR */
+.leftbar{
+background:#111827;
+padding:10px;
+}
+.leftbar button{
+width:100%;
+margin:8px 0;
+padding:8px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+}
+
+/* CANVAS AREA */
+.canvas-area{
+position:relative;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+}
+
+#editorCanvas{
+max-width:100%;
+max-height:100%;
+}
+
+/* DROP ZONE */
+.drop-zone{
+position:absolute;
+padding:30px;
+border:2px dashed #2563eb;
+background:white;
+cursor:pointer;
+}
+
+/* CROP BOX */
+#cropBox{
+position:absolute;
+border:2px dashed red;
+display:none;
+cursor:move;
+}
+
+/* RIGHT PANEL */
+.rightbar{
+background:white;
+padding:10px;
+border-left:1px solid #ddd;
+}
+
+.panel{
+display:none;
+}
